@@ -13,18 +13,18 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { FirebaseProvider } from '../providers/firebase/firebase';
 import { AngularFireModule } from 'angularfire2';
-import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFirestoreModule } from 'angularfire2/firestore'; //1700028 Juha Penttinen more firebase dependencies
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 
-export const environment = {
+export const environment = { //authentication information for firebase
   production: false,
   firebase: {
-    apiKey: 'AIzaSyA_93fpcBajU8JP6liDcd_1cd3HK0zFRYc',
+    apiKey: 'AIzaSyBnN3LQ4BEdD_sh3t6REUGZNy647qSET3A',
     authDomain: '<your-project-authdomain>',
-    databaseURL: 'https://labwork-4.firebaseio.com/',
-    projectId: 'labwork-4',
+    databaseURL: 'https://labwork-exam.firebaseio.com/',
+    projectId: 'Labwork-Exam',
     storageBucket: '<your-storage-bucket>',
     messagingSenderId: '<your-messaging-sender-id>'
   }

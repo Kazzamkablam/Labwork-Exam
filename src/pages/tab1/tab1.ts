@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ToastController } from 'ionic-angular'; // toast controller
 
 /**
  * Generated class for the Tab1Page page.
@@ -15,9 +16,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class Tab1Page {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public toastCtrl: ToastController,public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  presentToast(message: string, duration: number) { //function I added to use Ionic 3's built in Toast system.
+    let toast = this.toastCtrl.create({ //create the popup
+      message: message, //give message and duration as parameters for the function.
+      duration: duration,
+      position: 'bottom'
+    });
+  
+    toast.onDidDismiss(() => {
+      console.log('Dismissed toast'); //some debug information
+    });
+  
+    toast.present();
+  }
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad Tab1Page');
   }

@@ -25,7 +25,7 @@ export class LoginPage {
   constructor(private alertctrl: AlertController, private fire: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  alert(message: string) {
+  alert(message: string) {  //function for showing alerts
     this.alertctrl.create({
     title: 'Info!',
     subTitle: message,
@@ -34,21 +34,21 @@ export class LoginPage {
   }
 
   signInUser() {
-this.fire.auth.signInWithEmailAndPassword(this.user.value, this.password.value)
+this.fire.auth.signInWithEmailAndPassword(this.user.value, this.password.value)  // Juha Penttinen 1700028 Firebase authentication
     .then ( data => {
-      console.log('got some data',this.fire.auth.currentUser.displayName);
-      this.alert ('Success! You\'re logged in');
+      console.log('got some data',this.fire.auth.currentUser.email); //not necessary, just for testing
+      this.alert ('Success! You\'re logged in'); //yay we're in! Better tell user!
       this.navCtrl.setRoot ( 'MenuPage' );
     })
-    .catch ( error => {
+    .catch ( error => { //if error do stuff
       console.log('got an error', error)
       this.alert(error.message);
     })
 
-    console.log ('Would sign in with ', this.user.value, this.password.value)
+    console.log ('Would sign in with ', this.user.value, this.password.value) //not necessary, just for testing
   }
   push() {
-    this.navCtrl.push('RegisterPage');
+    this.navCtrl.push('RegisterPage'); //go to register page
 }
 
   ionViewDidLoad() {

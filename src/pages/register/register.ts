@@ -9,7 +9,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage()  // 1700028 Juha Penttinen, register page code
 @Component({
   selector: 'page-register',
   templateUrl: 'register.html',
@@ -22,7 +22,7 @@ export class RegisterPage {
   constructor(private alertctrl: AlertController, private fire: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  alert(message: string) {
+  alert(message: string) {  
     this.alertctrl.create({
     title: 'Info!',
     subTitle: message,
@@ -35,7 +35,7 @@ export class RegisterPage {
   }
 
   RegisterUser() {
-    this.fire.auth.createUserWithEmailAndPassword(this.user.value, this.password.value).then (data => {
+    this.fire.auth.createUserWithEmailAndPassword(this.user.value, this.password.value).then (data => { //authenticate with firebase
     console.log ('got data', data);
     this.alert('Registered!');
     })

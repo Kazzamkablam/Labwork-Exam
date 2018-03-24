@@ -11,3 +11,5 @@ import { Tab2Page } from './tab2';
   ],
 })
 export class Tab2PageModule {}
+
+//1700028 Juha Penttinen, Tab module

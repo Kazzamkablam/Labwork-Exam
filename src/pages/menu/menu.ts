@@ -1,10 +1,12 @@
 import { Tab2Page } from './../tab2/tab2';
 import { Tab1Page } from './../tab1/tab1';
+import { Tab3Page } from './../tab3/tab3';
+import { Tab4Page } from './../tab4/tab4';
 import { TabsPage } from './../tabs/tabs';
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, Nav } from 'ionic-angular';
+import { IonicPage, NavController, Nav } from 'ionic-angular'; //navcontroller depedencies
  
-export interface PageInterface {
+export interface PageInterface { //pageinterface structure
   title: string;
   pageName: string;
   tabComponent?: any;
@@ -24,9 +26,11 @@ export class MenuPage {
   // Reference to the app's root nav
   @ViewChild(Nav) nav: Nav;
  
-  pages: PageInterface[] = [
-    { title: 'Home', pageName: 'TabsPage', tabComponent: 'Tab1Page', index: 0, icon: 'home' },
-    { title: 'To do list', pageName: 'TabsPage', tabComponent: 'Tab2Page', index: 1, icon: 'contacts' },
+  pages: PageInterface[] = [  //1700028 Juha Penttinen, pageinterface like in the tutorial
+    { title: 'Targeted CV', pageName: 'TabsPage', tabComponent: 'Tab1Page', index: 0, icon: 'book' },
+    { title: 'Project Work', pageName: 'TabsPage', tabComponent: 'Tab2Page', index: 1, icon: 'basket' },
+    { title: 'Extra Curriculum activities', pageName: 'TabsPage', tabComponent: 'Tab3Page', index: 2, icon: 'contact' },
+    { title: 'Contact information', pageName: 'TabsPage', tabComponent: 'Tab4Page', index: 3, icon: 'contact' },
     { title: 'About', pageName: 'SpecialPage', icon: 'shuffle' },
   ];
  

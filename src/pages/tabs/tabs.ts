@@ -6,10 +6,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-tabs',
   templateUrl: 'tabs.html',
 })
-export class TabsPage {
+export class TabsPage { // 1700028 Juha Penttinen, tabs navigation like the tutorial 
  
   tab1Root: any = 'Tab1Page';
   tab2Root: any = 'Tab2Page';
+  tab3Root: any = 'Tab3Page';
+  tab4Root: any = 'Tab4Page';
   myIndex: number;
  
   constructor(navParams: NavParams) {

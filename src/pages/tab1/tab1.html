@@ -5,10 +5,122 @@
         <ion-icon name="menu"></ion-icon>
       </button>
       </ion-buttons>
-      <ion-title>Home</ion-title>
+      <ion-title>Targeted CV</ion-title>
     </ion-navbar>
   </ion-header>
    
-  <ion-content padding>
-    Welcome to this amazing project totally not created with tutorials!
+  <ion-content padding> <!-- 1700028 Juha Penttinen, home page -->
+  
+    <ion-grid> <!--grid for ionic for placing content -->
+      <ion-row>
+        <ion-col col-1> <!-- Ionic columns, col-1 or col-2 determining size of the column -->
+            <ion-img  src="/img/kuva1.jpg"></ion-img> <!-- ionic image, apparently less resource intensive than html one -->
+        </ion-col>
+        <ion-col>
+            <h6>About me</h6>I am second year student at Laurea University of Applied Sciences and I'm interested at computers, programming and games. I have been programming from very young age,
+            starting with basic and eventually proceeding to C, C++ and C#. After starting at Laurea I have familiarized myself with several programming languages such as Java, Javascript, Python and Lua. 
+            <BR><BR>I have strong desire to learn new skills and I will stop at nothing to complete tasks given to me.
+        </ion-col>
+      </ion-row>
+    </ion-grid>    
+    <hr>  
+<ion-row>
+  <ion-col>
+    I have developed various Ionic programs at Laurea University of Applied sciences that used both Ionic and AngularJS. I also have qualifications for HTML, CSS, PHP, MySQL, Bootstrap and Javascript with understanding of REST API and JSON. I believe I would be great asset to your team. In addition to skills required by your job my experiences include C#, C++, C and
+    production of various projects, either for myself or for clients. 
+  </ion-col>
+</ion-row>
+<hr>
+    <ion-grid> <!--grid for ionic for placing content -->
+      <ion-row>
+        <ion-col col-2>
+            Education:
+        </ion-col>
+        <ion-col>
+            Higher secondary school, 2001, Leppävaaran lukio, Espoo<BR>
+      			Business College, Advertising and marketing, 2006, Graduated 2008, Omnia, Espoo<BR>
+
+IT-Tradenomi (BBA) student at Laurea University of Applied Sciences. 2017-		
+
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-2>
+            Programming Competences:
+        </ion-col>
+        <ion-col>
+            C#, C, C++, Java, Javascript, PHP, CSS, HTML, Python, Lua, Visual Basic.
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col col-2>
+              Program Competences:
+          </ion-col>
+          <ion-col>
+              Microsoft Office, Unity, Game Maker Studio, Blender, Substance Painter.
+            </ion-col>
+
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+            PROFESSIONAL CAREER:<BR>
+              
+        </ion-col>
+        </ion-row>
+        <ion-row>
+        <ion-col col-2>
+            
+          9.1.2017 -current
+        </ion-col>
+        <ion-col>
+            IT-Tradenomi (BBA) student at Laurea University of Applied Sciences. <BR><BR>Laurea projects: (Details under project work)<BR><BR>Training game for fast victim sorting for INARCHUS<BR>Caveman VR presentation<BR>Automatic web form for creating estate inventory deeds
+           
+        </ion-col>
+        
+      </ion-row>
+      <ion-row>
+        <ion-col col-2>
+            2012-current
+        </ion-col>
+        <ion-col>
+            Working with various programming languages/tools such as C#, Unity and Game Maker Studio. Samples at Project work page.
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-2>
+            2010-2016
+        </ion-col>            
+        <ion-col>
+            <B>Länsiväylän Asianajotoimisto: </B>Working as office assistant for 6 years. (
+            <ion-icon name="add-circle" (click)="presentToast('Job included computer support, customer service and responding phone and making several types of documents. Also included occasional English translations, billing and pay calculations.', 5000)"></ion-icon>            
+            click me) <!-- presentToast is a function I added to show the popup texts, ion icon for the + sign -->
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-2>
+            2007-2009
+        </ion-col>
+        <ion-col>
+            <B>Outotec OYJ:</B> Working at Outotec marketing department as trainee and creating Bill of materials program.
+            <ion-icon name="add-circle" (click)="presentToast('Working at Outotec marketing department as trainee and creating Bill of materials program for keeping track of different projects around the company and allowing people participating in the projects to update information on the fly that is relayed to people who need to know about changes to it via e-mail. Another project included Global Sourcing Database to Outotec which was created using Lotus Notes and Domino Designer. This database has customer feedback forum where people can discuss about companies they are dealing with on discussion forums similar to ones commonly used on the internet.',9000)"></ion-icon>            
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-2>
+            1998-2000
+        </ion-col>
+        <ion-col>
+          <B>Outokumpu OY:</B> Macro and Visual Basic programming 
+          <ion-icon name="add-circle" (click)="presentToast('Using macro programming and Visual Basic, Work included data transfer application that reads specified amount of data from access- based design database and converts it to process electrification’s needed form to import it to another program. Inside the program there are several automated functions for managing the data and converting it to proper form. Program comes with user interface and instructions for use.',9000)"></ion-icon>            
+
+          <ion-icon name="add-circle" (click)="presentToast('Using macro programming and Visual Basic, Work included data transfer program which is used to read data from Oracle based instrumenting design program to separate Excel sheets that are given to clients. Work also included making those Excel sheets (Approximately 70 of them). Data transfer program also included user interface and proper instructions.',9000)"></ion-icon>            
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
   </ion-content>
