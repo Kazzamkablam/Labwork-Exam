@@ -35,7 +35,7 @@ export const environment = { //authentication information for firebase
     MyApp,
 
   ],
-  imports: [
+  imports: [ //angularfire dependencies
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
