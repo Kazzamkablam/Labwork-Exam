@@ -48,7 +48,7 @@ this.fire.auth.signInWithEmailAndPassword(this.user.value, this.password.value) 
     console.log ('Would sign in with ', this.user.value, this.password.value) //not necessary, just for testing
   }
   push() {
-    this.navCtrl.push('RegisterPage'); //go to register page
+    this.navCtrl.push('RegisterPage',{},{animate:true,animation:'transition',duration:500,direction:'forward'});
 }
 
   ionViewDidLoad() {

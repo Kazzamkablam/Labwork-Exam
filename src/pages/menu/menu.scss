@@ -1,3 +1,38 @@
 page-menu {
 
+
+    .menurounded { //rounded fancy buttons, shameless ripoff of my old style
+        border-radius: 5px;
+        width:100%;
+        margin-right: auto;
+        margin-left: auto;
+        box-shadow: 0 1px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+        background:rgba(255, 255, 255,0.1);
+        font-size:16px;
+        color:rgb(58, 58, 58);
+        text-shadow: 1px 1px #494949;
+    }
+
+    .menurounded:hover {
+        background:rgba(255, 255, 255,0.3) !important;  
+    }
+
+
+    .logoff { //rounded fancy buttons, shameless ripoff of my old style
+        border-radius: 10px;
+        width:100%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 1px;
+        margin-bottom: 4px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+        background:rgba(255, 255, 255,0.1);
+        font-size:16px;
+        color:rgb(58, 58, 58);
+        text-shadow: 1px 1px #494949;
+    }
+
+    .logoff:hover {
+        background:rgba(255, 255, 255,0.75) !important;  
+    }
 }

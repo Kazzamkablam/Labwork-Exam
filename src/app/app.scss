@@ -14,3 +14,84 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+@font-face { //custom fonts ...yay!
+    font-family: Open-sans;
+    src: url('../assets/fonts/OpenSans-Regular.ttf') format("truetype");
+    
+}
+    * { //This really doesn't need to be applied for each font, once is enough to apply it globally.
+        font-family: Open-sans;
+    }
+
+ion-content {
+    background-image: url('../assets/imgs/light-wood-texture.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+ion-navbar {
+    background-image: url('../assets/imgs/light-wood-texture.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    box-shadow: 0 0 5px gray;  
+}
+
+ion-item {
+    background-image: url('../assets/imgs/light-wood-texture.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    box-shadow: 0 0 5px gray;      
+}
+
+ion-list {
+    box-shadow: 0 0 5px rgb(75, 75, 75);   
+}
+
+  
+.tabs-md .tab-button { //custom tab coloring
+
+   }
+   
+     //selected color
+    .tabs-md .tab-button[aria-selected=true] {
+    // color: #fce515 !important;
+    background-color: #181818;
+    }
+
+     .tab-button {
+        background-image: url('../assets/imgs/light-wood-texture.jpg') !important;
+
+    }
+
+    .slides {
+        border: 5px solid rgb(107, 84, 36);
+        border-radius: 5%;
+        box-shadow: 0 0 5px gray;
+    }
+
+    .toolbar-background { //custom toolbar color
+        background: transparent;
+        background-color:rgba(255, 255, 255, 0.2);
+        
+    }
+
+    .rounded { //rounded fancy buttons, shameless ripoff of my old style
+        border-radius: 25px;
+        width:100%;
+        margin-right: auto;
+        margin-left: auto;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+        background:rgba(255, 255, 255,0.1);
+        font-size:16px;
+        color:rgb(58, 58, 58);
+        text-shadow: 1px 1px #494949;
+    }
+
+    .rounded:hover {
+        background:rgba(255, 255, 255,0.75) !important;  
+    }
