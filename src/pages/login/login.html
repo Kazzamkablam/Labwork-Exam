@@ -17,24 +17,32 @@
 <!-- Juha Penttinen 1700028 Login screen html-->
 <ion-content padding>
 
-    <ion-list>
+  <ion-list>
 
-        <ion-item>
-          <ion-label floating>Username</ion-label> <!-- username -->
-          <ion-input type="text" #username></ion-input>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label floating>Password</ion-label> <!-- password -->
-          <ion-input type="password" #password></ion-input> <!-- changed this from text to password to hide it from view -->
-        </ion-item>
-      
-      </ion-list>
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <!-- username -->
+      <ion-input type="text" #username></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <!-- password -->
+      <ion-input type="password" #password></ion-input>
+      <!-- changed this from text to password to hide it from view -->
+    </ion-item>
+
+  </ion-list>
 
   <div padding>
 
-      <button ion-button block class="rounded" (click)="signInUser()">Log in</button> <!-- Juha Penttinen 1700028 Log in-->
-      <button ion-button block class="rounded" (click)="push()">Don't have an account? Register</button> <!-- Juha Penttinen 1700028 Show register page-->
+    <button ion-button block class="rounded" (click)="signInUser()">Log in</button>
+    <!-- Juha Penttinen 1700028 Log in-->
+    <button ion-button block class="rounded" (click)="push()">Don't have an account? Register</button>
+    <!-- Juha Penttinen 1700028 Show register page-->
+    <!--<button ion-button block class="rounded" (click)="googleLogin()">Sign in with Google</button>-->
+
+        <img class="googeli" src="./assets/imgs/btn_google_signin_dark_normal_web.png" (click)="googleLogin()">
 
   </div>
 </ion-content>

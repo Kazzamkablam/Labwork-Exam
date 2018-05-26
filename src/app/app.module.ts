@@ -22,11 +22,11 @@ export const environment = { //authentication information for firebase
   production: false,
   firebase: {
     apiKey: 'AIzaSyBnN3LQ4BEdD_sh3t6REUGZNy647qSET3A',
-    authDomain: '<your-project-authdomain>',
+    authDomain: 'labwork-exam.firebaseapp.com',
     databaseURL: 'https://labwork-exam.firebaseio.com/',
     projectId: 'Labwork-Exam',
-    storageBucket: '<your-storage-bucket>',
-    messagingSenderId: '<your-messaging-sender-id>'
+    storageBucket: 'labwork-exam.appspot.com',
+    messagingSenderId: '297398393616'
   }
 };
 

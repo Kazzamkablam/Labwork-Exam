@@ -37,7 +37,7 @@ export class MenuPage {
     { title: 'Soft Skills', pageName: 'TabsPage', tabComponent: 'Tab3Page', index: 2, icon: 'basket' },
     { title: 'Personal Projects', pageName: 'TabsPage', tabComponent: 'Tab4Page', index: 3, icon: 'person' },
     { title: 'Team Projects', pageName: 'TabsPage', tabComponent: 'Tab5Page', index: 1, icon: 'people' },
-    { title: 'Extra Curriculum activities', pageName: 'TabsPage', tabComponent: 'Tab6Page', index: 2, icon: 'tennisball' },
+    { title: 'Extracurricular Activities', pageName: 'TabsPage', tabComponent: 'Tab6Page', index: 2, icon: 'tennisball' },
     { title: 'Contact Information', pageName: 'TabsPage', tabComponent: 'Tab7Page', index: 3, icon: 'contact' },
 
     { title: 'About', pageName: 'SpecialPage', icon: 'shuffle' },

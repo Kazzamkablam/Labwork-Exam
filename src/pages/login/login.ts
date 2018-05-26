@@ -4,6 +4,8 @@ import { RegisterPage } from '../register/register'
 import { AngularFireAuth } from 'angularfire2/auth';
 import { TabsPage } from '../tabs/tabs'
 import { MenuPage } from '../menu/menu'
+import * as firebase from 'firebase';
+import { GoogleAuthProvider } from '@firebase/auth-types';
 
 /**
  * Generated class for the LoginPage page.
@@ -21,6 +23,7 @@ export class LoginPage {
 
   @ViewChild('username') user;
   @ViewChild('password') password;
+  authState: any = null;
 
   constructor(private alertctrl: AlertController, private fire: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -47,6 +50,28 @@ this.fire.auth.signInWithEmailAndPassword(this.user.value, this.password.value) 
 
     console.log ('Would sign in with ', this.user.value, this.password.value) //not necessary, just for testing
   }
+
+  private socialSignIn(provider) { //huge success in Google login!
+    return this.fire.auth.signInWithPopup(provider)
+      .then((credential) =>  {
+          this.authState = credential.user
+          this.navCtrl.setRoot ( 'MenuPage' );
+          //this.updateUserData()
+      })
+      .catch ( error => { //if error do stuff
+        console.log('got an error', error)
+        this.alert(error.message);
+      })
+    //  .catch(error => console.log(error));
+}
+
+
+  googleLogin() {
+    
+    const provider = new firebase.auth.GoogleAuthProvider()
+    return this.socialSignIn(provider);
+}
+
   push() {
     this.navCtrl.push('RegisterPage',{},{animate:true,animation:'transition',duration:500,direction:'forward'});
 }
