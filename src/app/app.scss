@@ -74,6 +74,15 @@ ion-list {
         
     }
 
+    .tabbar {
+        a.tab-button[aria-selected=true] {
+            color: white;
+            .tab-button-icon {
+                color: white;
+            }
+        }
+    }
+
     .slides {
         background-image: url('../assets/imgs/light-wood-texture.jpg') !important;
         border: 5px solid rgb(107, 84, 36);

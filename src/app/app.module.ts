@@ -17,7 +17,6 @@ import { AngularFirestoreModule } from 'angularfire2/firestore'; //1700028 Juha 
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
-
 export const environment = { //authentication information for firebase
   production: false,
   firebase: {
